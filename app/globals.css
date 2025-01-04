@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shape {
+  width: 280px;
+  height: 121px;
+  background-color: #ededed;
+  position: relative;
+}
+.shape:before {
+  content: '';
+  width: 278px;
+  height: 119px;
+  background:black;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+.shape, .shape:before {
+  -webkit-clip-path: polygon(0 0, 248px 0, 278px 30px, 278px 120px, 30px 120px, 0 90px, 0 0);
+  clip-path: polygon(0 0, 248px 0, 278px 30px, 278px 120px, 30px 120px, 0 90px, 0 0);
+}
+  
