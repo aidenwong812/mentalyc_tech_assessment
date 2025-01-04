@@ -3,7 +3,7 @@ import LastComponent from "./head/lastCom";
 
 const Header = () => {
     return (
-        <div className="bg-white flex px-24 justify-between">
+        <div className="bg-white flex xl:px-24 px-2 justify-between duration-200">
             <FirstComponent/>
             <LastComponent/>
         </div>

@@ -5,7 +5,7 @@ const FilterComponent = () => {
     const [, setClientName] = useAtom(clientNameAtom);
     const [, setClincianName] = useAtom(clinicianNameAtom);
     return (
-        <div className="flex gap-2 w-full flex-1">
+        <div className="flex gap-2 w-full flex-1 flex-col md:flex-row">
             <div className="w-full flex-1 gap-2">
                 <p className="text-black text-[12px]">Client name</p>
                 <input

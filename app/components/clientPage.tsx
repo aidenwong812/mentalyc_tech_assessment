@@ -19,10 +19,10 @@ const ClientPage = () => {
                 </>
             }
             
-            <div className="flex flex-col w-full px-24 gap-4">
+            <div className="flex flex-col w-full xl:px-24 px-4 gap-4 duration-200">
                 <p className="font-bold text-black text-[20px]">Clients</p>
                 <TreatmentComponent isTreatment={isTreatment} setIsTreatment={setIsTreatment} />
-                <div className="flex gap-4 w-full items-end">
+                <div className="flex md:gap-4 gap-2 w-full items-end">
                     <FilterComponent />
                     <AddComponent />
                 </div>

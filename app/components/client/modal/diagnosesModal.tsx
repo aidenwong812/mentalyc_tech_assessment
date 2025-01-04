@@ -7,7 +7,7 @@ const DiagnosesModal = ({ setIsShowModal, setDiagnose }: { setIsShowModal: (prev
 
     ]
     return (
-        <div className="bg-white py-2 rounded-[8px] text-black absolute top-20 w-full shadow-md">
+        <div className="bg-white py-2 rounded-[8px] text-black absolute top-20 w-full shadow-md z-10">
             {diagnoses.map((item) => (
                 <div key={item.title} className="p-2 gap-[10px] flex items-center cursor-pointer"
                     onClick={() => {

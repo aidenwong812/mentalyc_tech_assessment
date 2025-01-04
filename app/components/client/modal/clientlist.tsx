@@ -9,7 +9,7 @@ const ClientList = () => {
     const [clinicianName,] = useAtom(clinicianNameAtom);
 
     if (clients.length < 2) {
-        return <p className="text-black">🙁 Oops! No matches found. Please double-check your input.</p>;
+        return <p className="text-black text-center">🙁 Oops! No matches found. Please double-check your input.</p>;
     }
     return (
         <div className="w-full h-[320px] overflow-auto flex flex-col text-black bg-white">
